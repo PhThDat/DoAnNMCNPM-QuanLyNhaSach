@@ -2,6 +2,7 @@ CREATE DATABASE SoftwareProject;
 
 USE SoftwareProject;
 
+-- Create tables
 CREATE TABLE Book (
     ID INT IDENTITY(1, 1),
     Name NVARCHAR(50),
@@ -92,16 +93,3 @@ ADD CONSTRAINT FK_ImportLog_Book_BookID FOREIGN KEY (BookID) REFERENCES Book(ID)
 
 ALTER TABLE PayDebtLog
 ADD CONSTRAINT FK_PayDebtLog_Customer_CustomerID FOREIGN KEY (CustomerID) REFERENCES Customer(ID);
-
--- Create functions
-CREATE OR ALTER FUNCTION ufnGetBookID (@BookName NVARCHAR(50))
-RETURNS INT
-AS BEGIN
-    DECLARE @id INT;
-
-    SELECT @id = ID
-    FROM Book
-    WHERE Name = @BookName;
-
-    RETURN(@id);
-END

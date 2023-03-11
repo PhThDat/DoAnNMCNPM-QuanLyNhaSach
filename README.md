@@ -1,5 +1,8 @@
 # Đồ án Nhập môn Công nghệ phầm mềm - Quản lý nhà sách
 
+## Lớp
+SE104.N21
+
 ## Sinh viên thực hiện:
 
 - Nguyễn Tấn Phát - 21521260

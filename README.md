@@ -1,7 +1,9 @@
-# Đồ án Nhập môn Công nghệ phầm mềm - Quản lý nhà sách
+# Đồ án Nhập môn Công nghệ phầm mềm
 
-## Lớp
-SE104.N21
+## Lớp: SE104.N21
+## Giảng viên hướng dẫn: 
+
+## Đề tài: Quản lý nhà sách
 
 ## Sinh viên thực hiện:
 

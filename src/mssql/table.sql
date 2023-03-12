@@ -60,6 +60,7 @@ CREATE TABLE Debt (
 CREATE TABLE ImportLog (
     OccuredDatetime DATETIME NOT NULL,
     BookID INT NOT NULL,
+    ImportDate DATE,
     Amount INT,
     Price DECIMAL(19, 4),
     CONSTRAINT PK_ImportLog_OccurenceDateTime PRIMARY KEY (OccuredDatetime),
@@ -68,6 +69,7 @@ CREATE TABLE ImportLog (
 CREATE TABLE PayDebtLog (
     OccuredDatetime DATETIME NOT NULL,
     CustomerID INT NOT NULL,
+    PaymentDate DATE,
     PaidAmount DECIMAL(19, 4),
     CONSTRAINT PK_PayDebtLog_OccurenceDateTime PRIMARY KEY (OccuredDatetime),
 );
